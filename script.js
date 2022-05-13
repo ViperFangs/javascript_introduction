@@ -58,3 +58,7 @@ let capitalize = (str) => { //this is a function expression
     return returnStr;  
 };
 
+function lastLetter(str){
+    return str.charAt(str.length - 1); //length starts the count from 1 but charAt starts the count from 0 therefore we reduce length by 1
+}
+
