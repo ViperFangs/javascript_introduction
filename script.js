@@ -62,3 +62,20 @@ function lastLetter(str){
     return str.charAt(str.length - 1); //length starts the count from 1 but charAt starts the count from 0 therefore we reduce length by 1
 }
 
+let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+function fizzBuzz(n){
+    for(x= 1; x <= n; x++){
+        console.log(fizzBuzzSolver(x));
+}
+}
+
+function fizzBuzzSolver(i){
+    if(i%3 == 0){
+        if(i%5 == 0) return "FizzBuzz";
+        else return "Fizz";
+    }
+    else if(i%5 == 0) return "Buzz";
+    else return i;
+}
+
