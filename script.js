@@ -43,3 +43,19 @@ console.log('1' + 2 + 2); // "122" and not "14", the complier sees the first str
 //only + adds the strings with numbers. All other operations will not consider strings and treat it as numbers. e.g.
 console.log( 6 - '2' ); // 4, converts '2' to a number
 console.log( '6' / '2' ); // 3, converts both operands to numbers
+
+function add7 (x) {
+    return x+7;
+}
+
+function multiply (i, j){
+    return i*j;
+}
+
+let capitilize = (str) => {
+    let str2 = str.charAt(0);
+    let capitalStr2 = str2.toUpperCase();
+    let returnStr = str.replace(str2, capitalStr2);
+    return returnStr;  
+};
+
