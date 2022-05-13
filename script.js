@@ -52,7 +52,7 @@ function multiply (i, j){
     return i*j;
 }
 
-let capitilize = (str) => {
+let capitalize = (str) => {
     let str2 = str.charAt(0);
     let capitalStr2 = str2.toUpperCase();
     let returnStr = str.replace(str2, capitalStr2);
