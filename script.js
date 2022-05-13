@@ -48,14 +48,13 @@ function add7 (x) {
     return x+7;
 }
 
-function multiply (i, j){
+function multiply (i, j){ //this is a function declaration
     return i*j;
 }
 
-let capitalize = (str) => {
-    let str2 = str.charAt(0);
-    let capitalStr2 = str2.toUpperCase();
-    let returnStr = str.replace(str2, capitalStr2);
+let capitalize = (str) => { //this is a function expression
+    let capitalStr = str.toUpperCase()[0]; //returns the uppercase letter at the 0th position in str
+    let returnStr = str.replace(str.charAt(0), capitalStr); //replaces the charAt 0th value with its uppercase version, doesn't matter if the str is uppercase or lowercase or both
     return returnStr;  
 };
 
